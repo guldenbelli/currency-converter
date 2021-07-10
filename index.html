@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Gulden's Currency Converter</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/be4a7c7e2c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Linkrels -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <script type="text/javascript" src="js/index.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark mg-left">
+        <a class="navbar-brand" href="">
+          <h1>Gulden's...</h1>
+        </a>
+        <div class="dropdown ms-auto">
+          <button class="btn-dropdown btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            🇬🇧 English
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a href="it/it-index.html" class="dropdown-item" href="#">🇮🇹 Italiano</a></li>
+            <li><a class="dropdown-item" href="tr/tr-index.html">🇹🇷 Türkçe</a></li>
+            <li><a class="dropdown-item" href="de/de-index.html">🇹🇩 Deutsch</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Awesome Currency Converter 💸 </h1>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-6 col-md-4 ms-auto">
+              <label for="">Input</label>
+              <input type="number" oninput="Calculate()" class="form-control" id="value1">
+            </div>
+            <div class="col-6 col-md-4">
+              <label for="">Currency</label>
+              <select onchange="Calculate()" class="form-select" id="converter">
+                <option value="EUR">EUR</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="GBP">GBP - Pound Sterling</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="USD">USD - United States Dollar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6 col-md-4 ms-auto">
+              <label for="">Output</label>
+              <input type="number" class="form-control" id="value2">
+            </div>
+            <div class="col-6 col-md-4">
+              <label for="">Currency</label>
+              <select onchange="Calculate()" class="form-select" id="converter2">
+                <option value="GBP">GBP - Pound Sterling</option>
+                <option value="CAD">CAD - Canadian Dollards</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="USD">USD - United States Dollar</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>So easy to use, even a dog could do it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Great Design.</h3>
+          <p>Gorgeous colours and minimal design.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Rates taken from none other than Google's Converter!</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-hading">Thank you for your time! It has been a great challenge.</h3>
+
+  </section>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <a href="https://github.com/guldenbelli" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/gulden-belli-708895198/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:belligulden@gmail.com" target="_blank"><i class="f-a fas fa-envelope"></i></a>
+    <p>© Copyright 2021 Gulden for FactSet's interview exercise</p>
+
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
