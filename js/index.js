@@ -32,6 +32,11 @@ function Calculate() {
         output = input * 87.65
       }
 
+      // CAD to TRY
+      else if (output_currency == "TRY") {
+        output = input * 6.96
+      }
+
       // CAD to USD
       else if (output_currency == "USD") {
         output = input * 0.80
@@ -60,6 +65,11 @@ function Calculate() {
       // CHF to JPY
       else if (output_currency == "JPY") {
         output = input * 87.65
+      }
+
+      // CHF to TRY
+      else if (output_currency == "TRY") {
+        output = input * 9.47
       }
 
       // CHF to USD
@@ -91,6 +101,11 @@ function Calculate() {
         output = input * 130.03
       }
 
+      // EUR to TRY
+      else if (output_currency == "TRY") {
+        output = input * 10.29
+      }
+
       // EUR to USD
       else if (output_currency == "USD") {
         output = input * 1.2897
@@ -118,6 +133,11 @@ function Calculate() {
       // GBP to JPY
       else if (output_currency == "JPY") {
         output = input * 151.20
+      }
+
+      // GBP to TRY
+      else if (output_currency == "TRY") {
+        output = input * 12.04
       }
 
       // GBP to USD
@@ -149,9 +169,48 @@ function Calculate() {
         output = input * 1.16
       }
 
+      // JPY to TRY
+      else if (output_currency == "TRY") {
+        output = input * 0.079
+      }
+
       // JPY to USD
       else if (output_currency == "USD") {
         output = input * 1.38
+      }
+
+      break;
+
+    case "TRY":
+
+      // TRY to CAD
+      if (output_currency == "CAD") {
+        output = input * 0.14
+      }
+
+      // TRY to CHF
+      else if (output_currency == "CHF") {
+        output = input * 0.11
+      }
+
+      // TRY to EUR
+      else if (output_currency == "EUR") {
+        output = input * 0.097
+      }
+
+      // TRY to GBP
+      else if (output_currency == "GBP") {
+        output = input * 0.083
+      }
+
+      // TRY to JPY
+      else if (output_currency == "JPY") {
+        output = input * 12.71
+      }
+
+      // TRY to USD
+      else if (output_currency == "USD") {
+        output = input * 0.12
       }
 
       break;
@@ -181,6 +240,11 @@ function Calculate() {
       // USD to JPY
       else if (output_currency == "JPY") {
         output = input * 109.85
+      }
+
+      // USD to TRY
+      else if (output_currency == "JPY") {
+        output = input * 8.66
       }
 
       break;
